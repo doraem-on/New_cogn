@@ -6,7 +6,7 @@
 
 Choose **Runtime → Run all** in Colab. Type a question in the **Ask Heartline** form and run that cell again for each new question. The last five replies stay on screen. The notebook contains the corpus, knowledge base and model training code, so it needs no API key or data uploads. Use fictional examples when sharing saved outputs.
 
-## A two-minute demonstration
+## demonstration
 
 | Ask | What to look for |
 | --- | --- |
