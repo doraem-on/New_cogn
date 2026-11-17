@@ -34,7 +34,17 @@ The classifier identified **81 of 96 held-out intents** (84.4% accuracy, 0.842 m
 
 The full notebook ran in local Jupyter. **All 18 end-to-end scenarios passed**, covering every intent, a paraphrase, an unsupported healthcare question, a low-confidence question and emergency escalation. Two blood-pressure questions retrieved different entries: one about fitting a cuff and one about logging readings.
 
-The interface retained successive replies in newest-first order, and turning off **show_reasoning** hid the decision trace. The published notebook and its question form also opened successfully in Google Colab. The execution results above come from the local Jupyter run.
+In local Jupyter, the interface retained successive replies in newest-first order, and turning off **show_reasoning** hid the decision trace.
+
+### Google Colab run · 17 November 2026
+
+All eight code cells completed on a hosted Python 3 Google Compute Engine runtime using **Runtime → Run all**. The classifier reproduced the local five-fold results on 96 held-out predictions.
+
+| Accuracy | Macro precision | Macro recall | Macro F1 | End-to-end scenarios |
+| --- | --- | --- | --- | --- |
+| 84.4% (81/96) | 0.848 | 0.844 | 0.842 | 18/18 passed |
+
+The retrieval check also passed: cuff fitting and keeping a blood-pressure log returned different entries. In the live form, “How should I log my BP readings?” returned a sourced answer. Rerunning the form with “What about my heart?” prompted a clarification between warning signs (0.34) and risk factors (0.30). The earlier reply remained visible below it.
 
 The small, hand-authored corpus measures classroom behavior. Real users may phrase symptoms or combine topics in ways the rules miss. This educational prototype is unsuitable for clinical triage or personal treatment decisions.
 
