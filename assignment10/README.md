@@ -48,6 +48,8 @@ The retrieval check also passed: cuff fitting and keeping a blood-pressure log r
 
 ![Heartline in Google Colab asking whether “What about my heart?” refers to warning signs or risk factors.](images/heartline-colab-2026-11-17.jpg)
 
+[Open in Google Colab](https://colab.research.google.com/github/doraem-on/New_cogn/blob/main/assignment10/main.ipynb) · [View full-size screenshot](images/heartline-colab-2026-11-17.jpg)
+
 The small, hand-authored corpus measures classroom behavior. Real users may phrase symptoms or combine topics in ways the rules miss. This educational prototype is unsuitable for clinical triage or personal treatment decisions.
 
 ## Run locally
