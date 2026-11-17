@@ -46,6 +46,8 @@ All eight code cells completed on a hosted Python 3 Google Compute Engine runtim
 
 The retrieval check also passed: cuff fitting and keeping a blood-pressure log returned different entries. In the live form, “How should I log my BP readings?” returned a sourced answer. Rerunning the form with “What about my heart?” prompted a clarification between warning signs (0.34) and risk factors (0.30). The earlier reply remained visible below it.
 
+![Heartline in Google Colab asking whether “What about my heart?” refers to warning signs or risk factors.](images/heartline-colab-2026-11-17.jpg)
+
 The small, hand-authored corpus measures classroom behavior. Real users may phrase symptoms or combine topics in ways the rules miss. This educational prototype is unsuitable for clinical triage or personal treatment decisions.
 
 ## Run locally
