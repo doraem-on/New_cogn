@@ -28,11 +28,15 @@ Choose **Runtime → Run all** in Colab. Type a question in the **Ask Heartline*
 | 6 · Scenario bench | All eight intents, a separately worded question, unsupported healthcare, ambiguity and an emergency, plus rule precedence and retrieval checks |
 | 7 · Colab interface | Reusable question form, answer history, source links and a reasoning view |
 
-## What the scores tell us
+## Test results
 
 The classifier identified **81 of 96 held-out intents** (84.4% accuracy, 0.842 macro F1). Every question was held out once, with the TF-IDF vocabulary and classifier refit inside each fold. Stress had the lowest recall (7 of 12). Broad wording such as “How can I sit less at work?” crossed the boundary between activity and stress.
 
-The scenario bench separately checks 18 requests against expected assistant routes, and verifies that two blood-pressure questions retrieve different information. The small, hand-authored corpus measures classroom behavior. Real users may phrase symptoms or combine topics in ways the rules miss. This educational prototype is unsuitable for clinical triage or personal treatment decisions.
+The full notebook ran in local Jupyter. **All 18 end-to-end scenarios passed**, covering every intent, a paraphrase, an unsupported healthcare question, a low-confidence question and emergency escalation. Two blood-pressure questions retrieved different entries: one about fitting a cuff and one about logging readings.
+
+The interface retained successive replies in newest-first order, and turning off **show_reasoning** hid the decision trace. The published notebook and its question form also opened successfully in Google Colab. The execution results above come from the local Jupyter run.
+
+The small, hand-authored corpus measures classroom behavior. Real users may phrase symptoms or combine topics in ways the rules miss. This educational prototype is unsuitable for clinical triage or personal treatment decisions.
 
 ## Run locally
 
